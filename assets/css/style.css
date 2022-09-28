@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+    
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}    
+body {
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+
+    padding-top: 100px;
+
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    /* text-align: center; */
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color:coral;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#highscorelink{
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.timer{
+    float: right;
+    margin-right: 10px;
+}
+.hotbar:empty{
+    background-color: blue;
+    justify-content: center;
+    align-items: flex-start;
+}
+.instuctions{
+    position: absolute;
+}
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px;
+    box-shadow: 0 0 10px 1px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: coral;
+    height: 100px;
+    font-size: 20px;
+}
+.btn:hover {
+    border-color: blueviolet;
+}
+
+.start-btn {
+    width: 100px;
+    height: 50px;
+}
+
+.next-btn {
+    width: 100px;
+    height: 50px;
+}
+.hide{
+    display:none;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  

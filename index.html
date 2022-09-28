@@ -5,12 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css"/>
-    <title>Code Quiz</title>
+    <title>JavaScript Code Quiz</title>
 </head>
 <body>
-    <header>
-        <button> </button> <!--Highscores Button-->
-    </header>
-    <script src="/assets/js/script.js"></script>
-</body>
+    <div class="wrapper">
+        <div class="header">
+            <a id="highscorelink" href="highscores.html">View Highscore</a>
+            <h1 id="title">JavaScript Code Quiz</h1>
+            <p class="timer"></p> 
+        </div>
+    </div>
+    <div class="container">
+        <div id="instructions">
+            <h3>Welcome To the Javascript Coding Quiz Challenge</h3>
+            <p>Once you click the start button, a 60 second timer will appear. You will have 60 seconds to answer the 5 javascript realated questions, in which afterwards your score will be saved in the highscores page for future viewing.</p>
+        </div>
+    <div id="question-c" class="hide">
+        <div id="question">Question </div>
+        <div id="answer-btn" class="btn-grid">
+           <button class="btn">a1</button>
+           <button class="btn">a2</button>
+           <button class="btn">a3</button>
+           <button class="btn">a4</button>
+        </div>
+    </div>    
+    <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class=" next-btn btn hide">Next</button>
+        <a href="highscores.html"><button id="highscore-btn" class=" highscore btn hide">Highscore</button></a>
+    </div>
+   </div>
+   <script src="/assets/js/script.js"></script>
+</body> 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <header>
+        <a href="highscores.html">
+        <button id="scores"> View Highscores </button> </a>
+        <h1>Code Quiz</h1>
+        <p class="timer"> Time: </p> 
+    </header>
+
+     <main>
+        <div>
+            <h2> Welcome To the Javascript Coding Quiz Challenge</h2>
+            <p> Once you click the start button, a 60 second timer will appear. You will have 60 seconds to answer the 5 javascript realated questions, in which afterwards your score will be saved in the highscores page for future viewing</p>
+            <button class="startTimer">Start Quiz</button>
+        </div>
+        <div>
+            <h3 id="question"></h3>
+            <ul>
+                <li class="choices"></li>
+                <li class="choices"></li>
+                <li class="choices"></li>
+                <li class="choices"></li>
+            </ul>
+        </div>
+    </main>
+    <script src="/assets/js/script.js"></script> -->
